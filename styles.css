@@ -37,12 +37,6 @@ input[type="button"] {
 }
 
 
-/* input[type="button"]:visited{
-    color:hsl(0, 0%, 100%);
-    background-color: hsl(60, 20%, 1%);
-    cursor: pointer;
-} */
-
 input[type="button"]:hover{
     color:hsl(0, 0%, 100%);
     background-color: hsl(27, 97%, 49%);
