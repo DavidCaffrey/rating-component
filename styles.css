@@ -73,6 +73,25 @@ input[type="button"]:focus{
 
 .modal {
   display: none;
+  background-color:hsl(213, 19%, 18%);
+  color:white;
+  padding: 50px 20px;
+  
+  border-radius: 20px;
+}
+
+.modal h2{
+    color: orange;
+    background-color:hsl(212, 13%, 30%);
+    padding: .5rem 1rem;
+    border-radius: 20px;
+}
+.modal h1{
+    padding-left: 70px;
+}
+
+.modal img{
+    margin: 0 0 0 50px;
 }
 
 .attribution {
