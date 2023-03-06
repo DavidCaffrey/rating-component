@@ -3,6 +3,15 @@ body{
     font-family: 'Overpass', sans-serif;
 }
 
+#icon-star{
+    width: 18px;
+    height: 18px;
+    padding: 20px;
+    border: 2px solid hsl(216, 10%, 30%);
+    background-color: hsl(216, 10%, 30%);
+    border-radius: 50px;
+}
+
 #card{
     width: 80%;
     background-color:hsl(213, 19%, 18%);
