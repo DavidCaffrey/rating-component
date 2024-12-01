@@ -1,22 +1,23 @@
 body{
     background-color:hsl(216, 12%, 8%);
     font-family: 'Overpass', sans-serif;
+    height: 100vh;
 }
 
 #icon-star{
-    width: 18px;
-    height: 18px;
-    padding: 20px;
-    border: 2px solid hsl(216, 10%, 30%);
-    background-color: hsl(216, 10%, 30%);
+    width: 1.25rem;
+    height: 1.25rem;
+    padding: 1rem;
+    /* border: 2px solid hsla(216, 10%, 30%, 0.508); */
+    background-color: hsla(216, 10%, 30%, 0.492);
     border-radius: 50px;
 }
 
 #card{
-    width: 80%;
+    width: 90%;
     background-color:hsl(213, 19%, 18%);
-    margin: 50px auto;
-    padding: 10px 20px;
+    margin: 10rem 1px 1px;
+    padding: 1rem 1rem;
     border-radius: 20px;
 }
 
@@ -37,12 +38,13 @@ p{
 input[type="button"] {
     width: 50px;
     height: 50px;
-    border: 2px solid hsl(216, 10%, 30%);
+    border: 2px solid hsla(216, 10%, 30%, 0.493);
     border-radius: 25px;
     color:hsl(217, 12%, 63%);
-    background-color: hsl(216, 10%, 30%);
+    background-color: hsla(216, 10%, 30%, 0.491);
     display: inline-block;
     font-size:1rem;
+    
 }
 
 
@@ -60,18 +62,20 @@ input[type="button"]:focus{
 
 
 #submit-btn{
-    width: 100%;
+    width: 95%;
     background-color: hsl(25, 97%, 53%);
     color: white;
-    font-size: 1rem;
+    font-size: .9rem;
+    font-weight:400;
     /* font-weight: bold; */
-    padding: 10px 0;
+    padding: 1rem 0;
     border: none;
-    border-radius: 20px;
+    border-radius: 3rem;
     letter-spacing: 3px;
     text-transform: uppercase;
-    margin:auto;
-    margin-bottom: 30px;
+    
+    margin-bottom: 1rem;
+    margin-left: .5rem;
 }
 
 #submit-btn:hover{
@@ -85,18 +89,27 @@ input[type="button"]:focus{
   background-color:hsl(213, 19%, 18%);
   color:white;
   padding: 50px 20px;
-  
+  margin-bottom: 2rem;
   border-radius: 20px;
 }
 
 .modal h2{
+    width: 60%;
     color: orange;
     background-color:hsl(212, 13%, 30%);
-    padding: .5rem 1rem;
+    padding: .5rem 0;
     border-radius: 20px;
+    text-align: center;
+    font-size: .9rem;
+    margin: 0 auto;
+    
 }
 .modal h1{
     padding-left: 70px;
+}
+
+.modal p{
+    text-align: center;
 }
 
 .modal img{
@@ -141,18 +154,50 @@ input[type="button"]:focus{
  
  /* Extra large devices (large laptops and desktops, 1200px and up) */
  @media only screen and (min-width: 1200px) {
+
+    main{
+        display: flex;
+        /* flex-direction: row; */
+        justify-content: center;
+        align-content: center;
+        align-items:baseline;
+    }
     #card{
-        width: 30%;
-        
+        width: 25%;
+        padding: 2rem;
+    }
+
+    #submit-btn{
+        margin-bottom: 0;
     }
     .modal{
         width: 25%;
         margin: auto;
+        padding: 2rem;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+        
     }
     .modal img{
         margin:0 0 0 100px;
     }
     .modal h1{
         padding-left: 100px;
+        margin-bottom: 0;
+    }
+
+    .modal h2{
+        width: 80%;
+        text-align: center;
+        padding: .5rem 0;
+        margin: auto;
+    }
+
+    .modal p{
+        line-height: 1.5rem;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1rem;
+        margin:0;
     }
  } 
